@@ -1,0 +1,754 @@
+@font-face {
+    font-family: "Black";
+    src: url(..//fonts/Urbanist-Black.ttf);
+}
+
+@font-face {
+    font-family: "Bold";
+    src: url(..//fonts/Urbanist-Bold.ttf);
+}
+
+@font-face {
+    font-family: "Meduim";
+    src: url(..//fonts/Urbanist-Medium.ttf);
+}
+
+@font-face {
+    font-family: "Regular";
+    src: url(..//fonts/Urbanist-Regular.ttf);
+}
+
+@font-face {
+    font-family: "SemiBold";
+    src: url(..//fonts/Urbanist-SemiBold.ttf);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    text-decoration: none;
+    list-style: none;
+
+}
+
+.container {
+    max-width: 1596px;
+    margin: 0 auto;
+}
+
+body {
+    background: var(--Green-97, #FAFDF2);
+}
+
+
+/* header */
+header {
+    background: var(--Dark-Green-15, #1a3129);
+    padding: 20px 0;
+}
+
+.header-block {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 26px;
+}
+
+.active {
+    color: var(--Green-70, #cbea7b);
+    font-size: 18px;
+    font-family: "SemiBold";
+    line-height: 150%;
+}
+
+nav a {
+    color: var(--Green-97, #fafdf2);
+    font-size: 18px;
+    font-family: "SemiBold";
+    line-height: 150%;
+}
+
+nav a:hover {
+    transition: 0.7s;
+    color: var(--Green-70, #cbea7b);
+}
+
+nav a :not(:hover) {
+    transition: 0.7s;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 26px;
+}
+
+nav ul li {
+    display: inline-block;
+    position: relative;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: var(--Green-70, #cbea7b);
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    min-width: 160px;
+    z-index: 1;
+}
+
+.dropdown-content li {
+    display: block;
+}
+
+.dropdown-content li a {
+    padding: 10px;
+    display: block;
+    color: var(--Green-97, #fafdf2);
+    font-size: 16px;
+    font-family: "SemiBold";
+    line-height: 150%;
+    text-decoration: none;
+}
+
+.show {
+    display: block;
+    border-radius: 4px;
+    text-align: center;
+}
+
+/* header */
+
+
+
+/* banner */
+.banner-text {
+    padding-top: 200px;
+    padding-bottom: 80px;
+}
+
+.banner-text h1 {
+    text-align: center;
+    color: var(--Grey-15, #262626);
+    font-family: "Bold";
+    font-size: 48px;
+    line-height: 150%;
+}
+
+.banner-text p {
+    color: var(--Grey-20, #333);
+    text-align: center;
+    font-family: "Meduim";
+    font-size: 18px;
+    line-height: 150%;
+    padding-top: 10px;
+}
+
+/* banner */
+
+/* comment */
+.comment-block {
+    border-radius: 16px;
+    border: 1px solid #EEF8D3;
+}
+
+.comment-text {
+    padding: 40px;
+
+}
+
+.comment-text p {
+    color: var(--Grey-20, #333);
+    font-family: "Meduim";
+    font-size: 18px;
+    text-align: center;
+    line-height: 150%;
+
+}
+
+.comment-img {
+    background: var(--Green-95, #F6FBE9);
+    padding: 30px 40px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 16px;
+    padding-bottom: 50px;
+}
+
+.comment-img img {
+    width: 60px;
+    height: 60px;
+    border-radius: 8px;
+    background: url(<path-to-image>), lightgray 50% / cover no-repeat;
+}
+
+.comment-img p {
+    color: var(--Dark-Green-15, #1A3129);
+    font-family: "SemiBold";
+    font-size: 18px;
+    line-height: 150%;
+}
+
+.comment-button {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 30px;
+    align-items: center;
+    padding-top: 50px;
+    padding-bottom: 187px;
+}
+
+/* comment */
+
+/* prising */
+.prising-text h2 {
+    color: var(--Grey-15, #262626);
+    text-align: center;
+    font-family: "Bold";
+    font-size: 48px;
+    line-height: 150%;
+}
+
+.prising-text p {
+    padding-top: 10px;
+    color: var(--Grey-20, #333);
+    text-align: center;
+    font-family: "Meduim";
+    font-size: 18px;
+    line-height: 150%;
+    padding-bottom: 80px;
+}
+
+.prising-button {
+    border-radius: 8px;
+    border: 1px solid var(--Green-80, #DCF1A7);
+    display: flex;
+    padding: 10px;
+    align-items: center;
+
+}
+
+.tab__btn {
+    padding: 10px 24px;
+    color: var(--Grey-30, #000000);
+    font-family: "SemiBold";
+    font-size: 18px;
+    line-height: 150%;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.button {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 50px;
+    position: relative;
+
+}
+
+.prisind-txt p {
+    color: var(--Grey-30, #4C4C4D);
+    text-align: center;
+    font-family: "Meduim";
+    font-size: 18px;
+    line-height: 150%;
+}
+
+/* prising */
+
+/* cards */
+
+.card {
+    border-radius: 12px;
+    border: 1px solid var(--Green-90, #EEF8D3);
+    background: var(--Green-95, #F6FBE9);
+    padding: 50px;
+    width: 512px;
+    height: 497px;
+
+}
+
+.card h3 {
+    color: var(--Grey-15, #262626);
+    font-family: "SemiBold";
+    font-size: 30px;
+    line-height: 150%;
+    padding-bottom: 2px;
+    font-weight: 600;
+
+}
+
+.card h4 {
+    color: var(--Grey-30, #4C4C4D);
+    font-family: "Meduim";
+    font-size: 18px;
+    line-height: 150%;
+    font-weight: 500;
+}
+
+.card p {
+    color: var(--Grey-15, #262626);
+    font-family: "Meduim";
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 150%;
+    padding: 40px 0;
+}
+
+span {
+    color: var(--Dark-Green-25, #2C5446);
+    font-family: "Bold";
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 87.523%;
+}
+
+.card h6 {
+    color: var(--Grey-20, #333);
+    font-family: "Meduim";
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 150%;
+    padding-bottom: 33px;
+}
+
+.btn {
+    border-radius: 8px;
+    background: var(--Green-70, #CBEA7B);
+    display: flex;
+    padding: 18px 41px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    align-self: stretch;
+    color: var(--Grey-15, #262626);
+    font-family: "SemiBold";
+    font-size: 18px;
+    font-weight: 600;
+}
+
+
+.menu {
+    display: flex;
+    gap: 3px;
+}
+
+.menu__elem {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.menu__btn {
+    color: var(--Green-70, #CBEA7B);
+    font-size: 18px;
+    font-family: "SemiBold";
+    line-height: 150%;
+    background-color: transparent;
+    border: none;
+    padding-right: 26px;
+
+}
+
+.menu__btn.active {
+    box-shadow: none;
+}
+
+.submenu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    padding-top: 10px;
+    width: 100%;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.submenu.active {
+    visibility: visible;
+    opacity: 1;
+}
+
+.submenu__wrapper {
+    font-family: "Regular";
+    color: #FFFFFF;
+    font-size: 14px;
+    padding: 40px 10px;
+    font-weight: 200;
+    border-radius: 5px;
+    background-color: #CBEA7B;
+}
+
+
+
+
+/* comment */
+.comment-block {
+    border-radius: 16px;
+    border: 1px solid #EEF8D3;
+    margin: 0 50px;
+}
+
+.comment-text {
+    padding: 40px;
+
+}
+
+.comment-text p {
+    color: var(--Grey-20, #333);
+    font-family: "Meduim";
+    font-size: 18px;
+    text-align: center;
+    line-height: 150%;
+
+}
+
+.sc p {
+    color: #1A3129;
+    font-family: "Meduim";
+    font-size: 18px;
+    text-align: center;
+    line-height: 150%;
+}
+
+.sc {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+    padding: 20px 20px 20px 100px;
+    background-color: #F6FBE9;
+}
+
+.btn-pr {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50px 38vw;
+}
+
+.dots {
+    text-align: center;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.dot {
+    height: 12px;
+    width: 12px;
+    margin: 0 5px;
+    background-color: #E5F5BD;
+    border-radius: 50%;
+    display: inline-block;
+    cursor: pointer;
+    transition: transform 0.3s ease, background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.dot:hover {
+    background-color: #356554;
+    border-color: #333;
+}
+
+.dot.active {
+    background-color: #356554;
+    transform: scale(1.2);
+    border-color: #333;
+}
+
+
+
+
+
+
+
+
+.tabs {
+    position: relative;
+    margin-bottom: 250px;
+
+}
+
+.tabs__items {
+    padding-bottom: 294px;
+}
+
+.tabs__btns {
+    display: flex;
+    width: 233px;
+    text-align: center;
+    margin-bottom: 14px;
+    border: 1px solid #DCF1A7;
+    border-radius: 8px;
+    padding: 10px;
+}
+
+.tab__btn {
+    cursor: pointer;
+    padding: 10px 24px;
+    width: 114px;
+    text-align: center;
+    border-radius: 6px;
+}
+
+
+.tab__btn.active {
+    color: var(--Grey-30, #ffffff);
+    background-color: #234338;
+}
+
+.tab__btn:hover {
+    transition: .7s;
+    background-color: #234338;
+}
+
+.tab__text {
+    position: absolute;
+    visibility: hidden;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.tab__text.active {
+    visibility: visible;
+}
+
+.phone img {
+    margin-bottom: -5px;
+}
+
+.phone {
+    padding: 14px;
+    text-align: center;
+    border: 1px solid #2C5446;
+    border-radius: 6px;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: none;
+    color: #CBEA7B;
+    font-size: 18px;
+}
+
+.phone.show {
+    display: block;
+}
+
+.phone-txt {
+    font-family: "SemiBold";
+}
+
+/* Modal */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+    background-color: var(--Green-85, #1A3129);
+    margin: 15% auto;
+    padding: 30px;
+    border-radius: 10px;
+    max-width: 900px;
+    text-align: center;
+}
+
+.modal-info {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.modal-box {
+    padding: 30px;
+    font-family: "Meduim";
+    background-color: var(--Green-95, #234338);
+    border-radius: 8px;
+    color: var(--Green-70, #cbea7b);
+}
+
+.modal-box p {
+    margin: 10px 0 0 0;
+}
+
+.close {
+    color: white;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+    color: #f1f1f1;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+/* FAQ */
+.faq h2 {
+    color: var(--Grey-15, #262626);
+    text-align: center;
+    font-family: "Meduim";
+    font-size: 48px;
+    font-weight: 700;
+    margin-bottom: 75px;
+}
+
+.p-acc {
+    color: var(--Grey-20, #333);
+    text-align: left;
+    font-family: "Meduim";
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 150%;
+    max-width: 1300px;
+}
+
+.p-main {
+    padding: 10px 0 80px 0;
+    color: var(--Grey-20, #333);
+    text-align: center;
+    font-family: "Meduim";
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 150%;
+}
+
+.faq-block {
+    border-radius: 12px;
+    border: 1px solid var(--Green-85, #e5f5bd);
+    background: var(--Green-95, #f6fbe9);
+    padding: 60px;
+    height: auto;
+    margin-bottom: 75px;
+}
+
+.faq-card1,
+.faq-card2,
+.faq-card3 {
+    display: flex;
+    flex-direction: column;
+}
+
+.faq-card1 h4,
+.faq-card2 h4,
+.faq-card3 h4 {
+    color: var(--Grey-15, #262626);
+    font-family: "Meduim";
+    font-size: 20px;
+    font-weight: 500;
+    height: 48px;
+}
+
+.faq-card1 h4 {
+    font-weight: 600;
+    padding-bottom: 20px;
+}
+
+.faq-card2 h4,
+.faq-card3 h4 {
+    padding-top: 12px;
+}
+
+.faq-card1 h5 {
+    color: var(--Grey-20, #333);
+    font-family: "Meduim";
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 150%;
+    text-align: left;
+}
+
+.str {
+    width: 1476px;
+    height: 1px;
+    background: #e5f5bd;
+    margin: 28px 0;
+}
+
+.faq-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    border-bottom: 1px solid #cbea7b;
+    cursor: pointer;
+    position: relative;
+    transition: background-color 0.3s ease;
+}
+
+.faq-card:hover {
+    background-color: #f0f7e3;
+}
+
+.faq-question {
+    font-size: 18px;
+    color: #1a3129;
+    font-family: "Meduim";
+    margin: 0;
+}
+
+.faq-answer {
+    display: none;
+    padding: 10px 0;
+    color: #1a3129;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.plus-div {
+    width: 48px;
+    justify-content: center;
+    display: flex;
+    font-size: 24px;
+    color: #1a3129;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    background: #234338;
+    padding: 12px;
+    border-radius: 6px;
+    color: white;
+}
+
+.faq-card.active .faq-toggle {
+    transform: rotate(45deg);
+}
+
+.faq-card.active .faq-answer {
+    display: block;
+}
+
+.new-div {
+    display: flex;
+    flex-direction: column;
+}

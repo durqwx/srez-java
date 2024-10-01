@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nutritionist</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+        <!-- header start -->
+        <header>
+            <div class="header-block container">
+                <div class="header-logo">
+                    <img src="assets/image/logo/Logo.png" alt="Logo">
+                </div>
+                <div class="header-nav">
+                    <nav>
+                        <ul>
+                            <li class="dropdown">
+                                <a href="#">Home</a>
+                                <ul class="dropdown-content">
+                                    <li><a href="#">Home 1</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#">About</a>
+                                <ul class="dropdown-content">
+                                    <li><a href="#">About 1</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#">Team</a>
+                                <ul class="dropdown-content">
+                                    <li><a href="#">Team 1</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </header>
+        <!-- header end -->
+    
+
+    <!-- banner start -->
+    <div class="banner container">
+        <div class="banner-text">
+            <h1>Our Testimonials</h1>
+            <p>Our satisfied clients share their success stories and experiences on their journey to better health and
+                well-being.</p>
+        </div>
+    </div>
+    <!-- banner end -->
+
+    <!-- comment start -->
+    <div class="comment container">
+        <div class="comment-block">
+
+            <div class="slider container">
+                <div class="slides">
+                    <div class="slide active">
+                        <div class="comment-text">
+                            <p>I can't thank Nutritionist enough for their personalized nutrition coaching. It has
+                                completely
+                                transformed my approach to food and helped me shed those extra pounds. Highly
+                                recommended!</p>
+                        </div>
+                        <div class="sc">
+                            <img src="assets/image/comment/Image.png" alt="">
+                            <p>Jennifer Anderson</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="slide">
+                    <div class="comment-text">
+                        <p>Nutritionist has been a game-changer for me. The expert guidance and support I received from
+                            their team made my weight loss journey so much easier. Thank you!</p>
+                    </div>
+                    <div class="sc">
+                        <img src="assets/image/Image22.png" alt="">
+                        <p>Robert Johnson</p>
+                    </div>
+                </div>
+                <div class="slide">
+                    <div class="comment-text">
+                        <p>I can't thank Nutritionist enough for their personalized nutrition coaching. It has
+                            completely
+                            transformed my approach to food and helped me shed those extra pounds. Highly recommended!
+                        </p>
+                    </div>
+                    <div class="sc">
+                        <img src="assets/image/comment/Image.png" alt="">
+                        <p>Jennifer Anderson</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="btn-pr">
+        <a class="prev" onclick="moveSlide(-1)">
+            <img src="assets/image/comment/Button.png" alt="">
+        </a>
+        <div class="dots">
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+        </div>
+        <a class="next" onclick="moveSlide(1)">
+            <img src="assets/image/comment/Button2.png" alt="">
+        </a>
+    </div>
+
+    </div>
+
+    <!-- comment end -->
+
+
+    <!-- prising start -->
+    <div class="prising container">
+        <div class="prising-text">
+            <h2>Our Pricing</h2>
+            <p>We outline our flexible and affordable options to support you on your journey to optimal health and
+                nutrition. We believe that <br> everyone deserves access to personalized nutrition guidance and
+                resources</p>
+        </div>
+    </div>
+
+
+    <!-- Modal -->
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div class="modal-info">
+                <div class="modal-box">
+                    <img src="assets/image/e3.png" alt="">
+                    <i class="fas fa-envelope"></i>
+                    <p style="
+                color: white;
+            ">support@nutritionist.com</p>
+                </div>
+                <div class="modal-box">
+                    <img src="assets/image/e2.png" alt="">
+                    <i class="fas fa-phone-alt"></i>
+                    <p style="
+                color: white;
+            ">+7(907)-624-76-87</p>
+                </div>
+                <div class="modal-box">
+                    <img src="assets/image/e1.png" alt="">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <p style="
+                color: white;
+            ">Somewhere in the World</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="assets/js/modal.js"></script>
+    <!-- Modal end -->
+
+
+
+    <div class="tabs">
+        <div class="button">
+            <div class="tabs__btns">
+                <a class="tab__btn active">Monthly</a>
+                <a class="tab__btn">Yearly</a>
+            </div>
+            <div class="prisind-txt">
+                <p>Save 50% on Yearly</p>
+            </div>
+        </div>
+        <div class="tabs__items container">
+            <div class="tab__text active">
+                <div class="card">
+                    <h3>Basic Plan</h3>
+                    <h4>Up to 50% off on Yearly Plan</h4>
+                    <p>Get started on your health journey with our Basic Plan. It includes personalized nutrition
+                        coaching,
+                        access to our app, meal planning assistance, and email support.</p>
+                    <h6><span>$49</span>/month</h6>
+                    <a href="#" class="btn">Choose Plan</a>
+                </div>
+                <div class="card">
+                    <h3>Premium Plan</h3>
+                    <h4>Up to 50% off on Yearly Plan</h4>
+                    <p>Upgrade to our Premium Plan for enhanced <br> features. In addition to the Basic Plan, you'll
+                        receive
+                        video consultations, priority support, and personalized recipe recommendations.</p>
+                    <h6><span>$79</span>/month</h6>
+                    <a href="#" class="btn">Choose Plan</a>
+                </div>
+                <div class="card">
+                    <h3>Basic Plan</h3>
+                    <h4>Up to 50% off on Yearly Plan</h4>
+                    <p>Experience the full benefits of personalized nutrition coaching with our Ultimate Plan. Enjoy all
+                        the
+                        features of the Premium Plan, along with 24/7 chat support and exclusive workshops.</p>
+                    <h6><span>$99</span>/month</h6>
+                    <a href="#" class="btn">Choose Plan</a>
+                </div>
+            </div>
+            <div class="tab__text">
+                <div class="card">
+                    <h3>Basic Plan</h3>
+                    <h4>Up to 50% off on Yearly Plan</h4>
+                    <p>Get started on your health journey with our Basic Plan. It includes personalized nutrition
+                        coaching,
+                        access to our app, meal planning assistance, and email support.</p>
+                    <h6><span>$294</span>/month</h6>
+                    <a href="#" class="btn">Choose Plan</a>
+                </div>
+                <div class="card">
+                    <h3>Premium Plan</h3>
+                    <h4>Up to 50% off on Yearly Plan</h4>
+                    <p>Upgrade to our Premium Plan for enhanced <br> features. In addition to the Basic Plan, you'll
+                        receive
+                        video consultations, priority support, and personalized recipe recommendations.</p>
+                    <h6><span>$494</span>/month</h6>
+                    <a href="#" class="btn">Choose Plan</a>
+                </div>
+                <div class="card">
+                    <h3>Basic Plan</h3>
+                    <h4>Up to 50% off on Yearly Plan</h4>
+                    <p>Experience the full benefits of personalized nutrition coaching with our Ultimate Plan. Enjoy all
+                        the
+                        features of the Premium Plan, along with 24/7 chat support and exclusive workshops.</p>
+                    <h6><span>$594</span>/month</h6>
+                    <a href="#" class="btn">Choose Plan</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- cards end -->
+
+
+
+
+
+    <!-- FAQ start -->
+    <div class="faq container">
+        <h2>FAQ</h2>
+        <p class="p-main">
+            We address commonly asked questions and provide comprehensive answers to
+            help you navigate your way through your <br />
+            nutrition and wellness journey.
+        </p>
+        <div class="faq-block">
+            <div class="faq-card">
+                <div class="new-div">
+                    <h4 class="faq-question">
+                        What is personalized nutrition coaching?
+                    </h4>
+                    <div class="faq-answer">
+                        <p class="p-acc">
+                            Personalized nutrition coaching involves creating a customized
+                            nutrition plan based on your unique goals, preferences, and
+                            dietary requirements. Our team of experts will work closely with
+                            you to develop a plan that fits your lifestyle and helps you
+                            achieve optimal health and wellness.
+                        </p>
+                    </div>
+                </div>
+                <div class="plus-div">
+                    <div class="faq-toggle">+</div>
+                </div>
+            </div>
+
+            <div class="faq-card">
+                <div class="new-div">
+                    <h4 class="faq-question">
+                        How can nutrition coaching help me lose weight?
+                    </h4>
+                    <div class="faq-answer">
+                        <p class="p-acc">
+                            Thus, the advantage of psychotherapy as an effective way to lose
+                            weight is to solve the problem of excess weight not only at the
+                            level of the stomach and body, but also at the level of
+                            consciousness, subconsciousness and unconsciousness, which in
+                            fact and control the metabolic processes, the processes of
+                            saturation and recovery of the body.
+                        </p>
+                    </div>
+                </div>
+                <div class="plus-div">
+                    <div class="faq-toggle">+</div>
+                </div>
+            </div>
+
+            <div class="faq-card">
+                <div class="new-div">
+                    <h4 class="faq-question">
+                        Can I still enjoy my favorite foods while on a nutrition plan?
+                    </h4>
+                    <div class="faq-answer">
+                        <p class="p-acc">
+                            Personalized nutrition coaching involves creating a customized
+                            nutrition plan based on your unique goals, preferences, and
+                            dietary requirements. Our team of experts will work closely with
+                            you to develop a plan that fits your lifestyle and helps you
+                            achieve optimal health and wellness.
+                        </p>
+                    </div>
+                </div>
+                <div class="plus-div">
+                    <div class="faq-toggle">+</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="assets/js/accordion.js"></script>
+    <!-- FAQ end -->
+
+
+    <!-- номер телефона -->
+    <div class="phone">
+        <img src="assets/image/Vector.png" alt="">
+        <a class="phone-txt">+7(967)-(124)-76-87
+        </a>
+    </div>
+    <!-- номер телефона -->
+
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>
